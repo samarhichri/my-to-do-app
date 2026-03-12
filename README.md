@@ -213,24 +213,3 @@ The frontend will call the backend using:
 const API_URL = "http://localhost:5000";
 ```
 
----
-
-## How This App Is Used in Other Projects
-
-This repository focuses only on the **application code** (frontend, backend, and database schema).
-
-The same app will be reused in multiple **DevOps / solution architecture projects**, including but not limited to:
-
-- Containerization with Podman
-- Deployment on Red Hat OpenShift
-- CI/CD pipelines using GitLab CI and Ansible
-- Observability, monitoring, and alerting setups
-
-Those projects will each live in **separate GitHub repositories**. They will reference this To-Do app as a simple demo workload to showcase:
-
-- Container image creation and best practices
-- Deployment patterns and configuration management
-- Pipelines and automation
-- Architecture and operational design
-
-This separation keeps the app itself small and focused, while allowing each DevOps project to highlight a specific skill or technology stack.
