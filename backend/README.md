@@ -10,9 +10,9 @@ The backend is intentionally small and straightforward so it can be reused as a 
 ## Tech Stack
 
 - Python 3.x
-- Flask(3.0.0)
-- flask-cors(4.0.0)
-- PyMySQL(1.1.0)
+- Flask 3.0.0
+- flask-cors 4.0.0
+- PyMySQL 1.1.0
 - MySQL-compatible database (`todo_app` schema)
 
 ---
