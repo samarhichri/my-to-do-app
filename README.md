@@ -12,7 +12,7 @@ Those DevOps-focused projects will live in **separate repositories** and referen
 
 ---
 
-## Repository Structure
+## Repository Structure:
 
 ```text
 .
@@ -23,14 +23,14 @@ Those DevOps-focused projects will live in **separate repositories** and referen
 
 ---
 
-## High-Level Overview
+## High-Level Overview :
 
-- **Frontend (`frontend/`)**
+- **Frontend (`frontend/`)**:
   - HTML/CSS/JS application.
   - Displays a list of tasks and a form to create new tasks.
   - Communicates with the backend via HTTP using the Fetch API.
 
-- **Backend (`backend/`)**
+- **Backend (`backend/`)**:
   - Flask API exposing:
     - `GET /health` – health check.
     - `GET /tasks` – list all tasks.
@@ -38,7 +38,7 @@ Those DevOps-focused projects will live in **separate repositories** and referen
   - Connects to a MySQL-compatible database using PyMySQL.
   - Uses environment variables for database configuration.
 
-- **Database (`database.sql`)**
+- **Database (`database.sql`)**:
   - Defines the `todo_app` database.
   - Creates two tables: `users` and `tasks`.
   - Configures foreign keys and simple indexes.
@@ -46,9 +46,9 @@ Those DevOps-focused projects will live in **separate repositories** and referen
 
 ---
 
-## Diagrams
+## Diagrams:
 
-### 1. Logical Architecture
+### 1. Logical Architecture:
 
 ```mermaid
 flowchart LR
@@ -68,7 +68,7 @@ flowchart LR
     API -->|"SQL (SELECT/INSERT on tasks)"| DB
 ```
 
-### 2. Request Flow – "Create Task"
+### 2. Request Flow : "Create Task":
 
 ```mermaid
 sequenceDiagram
@@ -91,18 +91,18 @@ sequenceDiagram
 
 ---
 
-## Database Schema
+## Database Schema:
 
 The database is created and populated by `database.sql`.
 
-### Schema Summary
+### Schema Summary:
 
 - **Database**: `todo_app`
 - **Tables**:
   - `users`
   - `tasks`
 
-### `users` Table
+### `users` Table:
 
 ```sql
 CREATE TABLE IF NOT EXISTS users (
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS users (
 ) ENGINE=InnoDB;
 ```
 
-### `tasks` Table
+### `tasks` Table:
 
 ```sql
 CREATE TABLE IF NOT EXISTS tasks (
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS tasks (
 ) ENGINE=InnoDB;
 ```
 
-### Sample Data
+### Sample Data:
 
 ```sql
 INSERT INTO users (username, email, password_hash) VALUES
@@ -144,9 +144,9 @@ INSERT INTO tasks (user_id, title, description, status) VALUES
 
 ---
 
-## Running the Application Locally (Quick Start)
+## Running the Application Locally:
 
-### 1. Database
+### 1. Database:
 
 1. Start a MySQL-compatible database (e.g., MySQL) listening on:
 
@@ -163,7 +163,7 @@ INSERT INTO tasks (user_id, title, description, status) VALUES
 
 ---
 
-### 2. Backend
+### 2. Backend:
 
 From the `backend` directory:
 
@@ -201,7 +201,7 @@ The backend will listen on `http://0.0.0.0:5000`.
 
 ---
 
-### 3. Frontend
+### 3. Frontend:
 
 From the `frontend` directory:
 
