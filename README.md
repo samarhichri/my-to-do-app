@@ -213,3 +213,4 @@ The frontend will call the backend using:
 const API_URL = "http://localhost:5000";
 ```
 
+⭐ If you find this project helpful, please give the repo a star : it really helps support the project!
