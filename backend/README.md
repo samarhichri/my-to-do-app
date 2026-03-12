@@ -10,9 +10,9 @@ The backend is intentionally small and straightforward so it can be reused as a 
 ## Tech Stack
 
 - Python 3.x
-- [Flask](3.0.0)
-- [flask-cors](4.0.0)
-- [PyMySQL](1.1.0)
+- Flask(3.0.0)
+- flask-cors(4.0.0)
+- PyMySQL(1.1.0)
 - MySQL-compatible database (`todo_app` schema)
 
 ---
@@ -201,5 +201,5 @@ All endpoints are defined in `routes.py` under the `api` blueprint.
 
 - This backend is intentionally minimal and is used as a base API for DevOps and architecture demonstrations (containerization, OpenShift deployments, CI/CD pipelines, monitoring, etc.).
 - Future projects that use this backend will live in separate repositories and reference this API as a demo service.
-```
+
 
