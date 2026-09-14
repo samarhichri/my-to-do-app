@@ -9,4 +9,7 @@ def get_connection():
         database=DB_NAME,
         port=DB_PORT,
         cursorclass=pymysql.cursors.DictCursor
+        connect_timeout=5,
+        read_timeout=10,
+        write_timeout=10,
     )
